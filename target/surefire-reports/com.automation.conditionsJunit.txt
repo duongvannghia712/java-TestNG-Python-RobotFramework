@@ -1,0 +1,68 @@
+-------------------------------------------------------------------------------
+Test set: com.automation.conditionsJunit
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 16, Errors: 0, Skipped: 0, Time elapsed: 0.506 s <<< FAILURE! - in com.automation.conditionsJunit
+scenario_01 on scenario_01(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_01(conditionsJunit.java:25)
+
+scenario_02 on scenario_02(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_02(conditionsJunit.java:30)
+
+scenario_03 on scenario_03(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_03(conditionsJunit.java:35)
+
+scenario_04 on scenario_04(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_04(conditionsJunit.java:40)
+
+scenario_05 on scenario_05(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_05(conditionsJunit.java:45)
+
+scenario_07 on scenario_07(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+	at com.automation.conditionsJunit.scenario_07(conditionsJunit.java:55)
+
+scenario_08 on scenario_08(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_08(conditionsJunit.java:60)
+
+scenario_09 on scenario_09(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_09(conditionsJunit.java:65)
+
+scenario_10 on scenario_10(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_10(conditionsJunit.java:70)
+
+scenario_12 on scenario_12(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 3
+	at com.automation.conditionsJunit.scenario_12(conditionsJunit.java:80)
+
+scenario_13 on scenario_13(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 3
+	at com.automation.conditionsJunit.scenario_13(conditionsJunit.java:85)
+
+scenario_14 on scenario_14(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_14(conditionsJunit.java:90)
+
+scenario_16 on scenario_16(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_16(conditionsJunit.java:100)
+
+scenario_17 on scenario_17(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_17(conditionsJunit.java:105)
+
+scenario_18 on scenario_18(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_18(conditionsJunit.java:110)
+
+scenario_19 on scenario_19(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_19(conditionsJunit.java:115)
+
