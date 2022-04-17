@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class common implements commonMethodInt, commonMethodString, commonMethodObject {
+public class common implements commonMethodString, commonMethodObject {
       public static String str_1 = "Wrong String Format";
       public static String str_2 = "Start getData ${_getData[1]}...";
       public static String str_3 = "Start getData ${_getData[6]}...";
@@ -74,15 +74,15 @@ public class common implements commonMethodInt, commonMethodString, commonMethod
       
       @Override
       public int checkTypeOfArray(Object array) {
-            int resuilt = 0;
+            int result = 0;
             try{ 
                   String [] check = (String []) array;
                   if (check.length == 0){
-                  resuilt = 0;
+                  result = 0;
                   // System.out.println("Empty 1-Dimensional Array...");
                   }
                   else{
-                  resuilt = 1;
+                  result = 1;
                   // System.out.println("1-Dimensional Array...");
                   }
             }
@@ -90,15 +90,15 @@ public class common implements commonMethodInt, commonMethodString, commonMethod
             catch (Exception e){
                   String [][] check = (String [][]) array;
                   if (check.length == 0){
-                  resuilt = 0;
+                  result = 0;
                   // System.out.println("Empty 2-Dimensional Array...");
                   }
                   else{
-                  resuilt = 2;
+                  result = 2;
                   // System.out.println("2-Dimensional Array...");
                   }
             }
-            return resuilt;
+            return result;
       }
 
 
@@ -108,28 +108,28 @@ public class common implements commonMethodInt, commonMethodString, commonMethod
             String check_1 = "${_getData[";
             String check_2 = "][";
             String check_3 = "]}";
-            int resuilt1D;
-            int resuilt2D_1;
-            int resuilt2D_2;
-            List<Integer> resuilt = new ArrayList<>();;
+            int result1D;
+            int result2D_1;
+            int result2D_2;
+            List<Integer> result = new ArrayList<>();;
             if (str.contains(check_1) == true && str.contains(check_3)) {
                   String indexArray1D = str.substring(str.indexOf(check_1) + check_1.length(), str.indexOf(check_3));
                   if (isInteger(indexArray1D) == true){
-                  resuilt1D = Integer.parseInt(indexArray1D);
-                  resuilt.add(resuilt1D);
+                  result1D = Integer.parseInt(indexArray1D);
+                  result.add(result1D);
                   }
             }
             if (str.contains(check_1) == true && str.contains(check_2) && str.contains(check_3)) {
                   String indexArray2D_1 = str.substring(str.indexOf(check_1) + check_1.length(), str.indexOf(check_2));
                   String indexArray2D_2 = str.substring(str.indexOf(check_2) + check_2.length(), str.indexOf(check_3));
                   if (isInteger(indexArray2D_1) == true && isInteger(indexArray2D_2) == true){
-                  resuilt2D_1 = Integer.parseInt(indexArray2D_1);
-                  resuilt2D_2 = Integer.parseInt(indexArray2D_2);
-                  resuilt.add(resuilt2D_1);
-                  resuilt.add(resuilt2D_2);
+                  result2D_1 = Integer.parseInt(indexArray2D_1);
+                  result2D_2 = Integer.parseInt(indexArray2D_2);
+                  result.add(result2D_1);
+                  result.add(result2D_2);
                   }
             }
-            return resuilt;
+            return result;
       }
 
 

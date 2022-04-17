@@ -12,7 +12,8 @@ public class conditionsTestNGIT extends common {
             System.out.println("Start Testing...");
       }
 
-      
+
+      /************************************* */
       @Test(priority = 1,description = "TC1 -- Test with Empty 1-Dimensional Array and Wrong String")
       public void scenario_01() {
             Assert.assertTrue(dataLoader(Array_1, str_1));
@@ -109,6 +110,115 @@ public class conditionsTestNGIT extends common {
       }
 
 
+
+      // Test Cases Extend:
+      @Test(priority = 20,description = "TC20 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i]} and i is valid & i >= length of 1-Dimensional Array)")
+      public void scenario_20() {
+            Assert.assertTrue(dataLoader(Array_1, str_3));
+      }
+
+      @Test(priority = 21,description = "TC21 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i]} and i is invalid)")
+      public void scenario_21() {
+            Assert.assertTrue(dataLoader(Array_1, str_4));
+      }
+
+      @Test(priority = 22,description = "TC22 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are invalid and i >= length of 1-Dimensional Array)")
+      public void scenario_22() {
+            Assert.assertTrue(dataLoader(Array_1, str_5));
+      }
+
+      @Test(priority = 23,description = "TC23 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are valid)")
+      public void scenario_23() {
+            Assert.assertTrue(dataLoader(Array_1, str_6));
+      }
+
+      @Test(priority = 24,description = "TC24 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are valid and j >= length of 1- Dimensional Array[i])")
+      public void scenario_24() {
+            Assert.assertTrue(dataLoader(Array_1, str_7));
+      }
+
+      @Test(priority = 25,description = "TC25 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i is invalid and j is valid)")
+      public void scenario_25() {
+            Assert.assertTrue(dataLoader(Array_1, str_8));
+      }
+
+      @Test(priority = 26,description = "TC26 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i is valid and j is invalid)")
+      public void scenario_26() {
+            Assert.assertTrue(dataLoader(Array_1, str_9));
+      }
+
+      @Test(priority = 27,description = "TC27 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are invalid)")
+      public void scenario_27() {
+            Assert.assertTrue(dataLoader(Array_1, str_10));
+      }
+
+      @Test(priority = 28,description = "TC28 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i]} and i is valid)")
+      public void scenario_28() {
+            Assert.assertTrue(dataLoader(Array_2, str_2));
+      }
+
+      @Test(priority = 29,description = "TC29 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i]} and i is valid & i >= length of 2-Dimensional Array)")
+      public void scenario_29() {
+            Assert.assertTrue(dataLoader(Array_2, str_3));
+      }
+
+      @Test(priority = 30,description = "TC30 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i]} and i is invalid)")
+      public void scenario_30() {
+            Assert.assertTrue(dataLoader(Array_2, str_4));
+      }
+
+      @Test(priority = 31,description = "TC31 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are invalid and i >= length of 2-Dimensional Array)")
+      public void scenario_31() {
+            Assert.assertTrue(dataLoader(Array_2, str_5));
+      }
+
+      @Test(priority = 32,description = "TC32 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are valid and j >= length of 2- Dimensional Array[i])")
+      public void scenario_32() {
+            Assert.assertTrue(dataLoader(Array_2, str_7));
+      }
+
+      @Test(priority = 33,description = "TC33 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i is invalid and j is valid)")
+      public void scenario_33() {
+            Assert.assertTrue(dataLoader(Array_2, str_8));
+      }
+
+      @Test(priority = 34,description = "TC34 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i is valid and j is invalid)")
+      public void scenario_34() {
+            Assert.assertTrue(dataLoader(Array_2, str_9));
+      }
+
+      @Test(priority = 35,description = "TC35 -- Test with Empty 2-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are invalid)")
+      public void scenario_35() {
+            Assert.assertTrue(dataLoader(Array_2, str_10));
+      }
+
+      @Test(priority = 36,description = "TC36 -- Test with 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i >= length of 1-Dimensional Array)")
+      public void scenario_36() {
+            Assert.assertTrue(dataLoader(Array_3, str_5));
+      }
+
+      @Test(priority = 37,description = "TC37 -- Test with 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and j >= length of 1-Dimensional Array[i])")
+      public void scenario_37() {
+            Assert.assertTrue(dataLoader(Array_3, str_7));
+      }
+
+      @Test(priority = 38,description = "TC38 -- Test with 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i is invalid & j is valid)")
+      public void scenario_38() {
+            Assert.assertTrue(dataLoader(Array_3, str_8));
+      }
+
+      @Test(priority = 39,description = "TC39 -- Test with 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i is valid & j is invalid)")
+      public void scenario_39() {
+            Assert.assertTrue(dataLoader(Array_3, str_9));
+      }
+
+      @Test(priority = 40,description = "TC40 -- Test with 1-Dimensional Array and Correct String (String contains ${_getData[i][j]} and i & j are invalid)")
+      public void scenario_40() {
+            Assert.assertTrue(dataLoader(Array_3, str_10));
+      }
+
+
+      /************************************* */
       @AfterClass
       public static void end_testing() {
             System.out.println("End Testing...");
