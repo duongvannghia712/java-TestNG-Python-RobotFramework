@@ -1,5 +1,7 @@
 package com.automation;
 
+import java.util.Arrays;
+
 import org.junit.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
@@ -21,7 +23,7 @@ public class conditionsTestNGIT extends common {
 
       @Test(priority = 2,description = "TC2 -- Test with Empty 1-Dimensional Array and Correct String (String contains ${_getData[i]})")
       public void scenario_02() {
-            Assert.assertTrue(dataLoader(Array_1, str_2));
+            Assert.assertTrue("String: " + str_1 + " and Array: " + Arrays.toString(Array_1), dataLoader(Array_1, str_2));
       }
 
       @Test(priority = 3,description = "TC3 -- Test with Empty 2-Dimensional Array and Wrong String")
@@ -216,6 +218,169 @@ public class conditionsTestNGIT extends common {
       public void scenario_40() {
             Assert.assertTrue(dataLoader(Array_3, str_10));
       }
+
+
+      // Test Cases for Multiple Correct Format in String:
+      @Test(priority = 41,description = "TC41 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, both are valid)")
+      public void scenario_41() {
+            Assert.assertTrue(dataLoader(Array_3, str_11));
+      }
+
+      @Test(priority = 42,description = "TC42 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, 1 is valid and 1 have i > len(1D Array))")
+      public void scenario_42() {
+            Assert.assertTrue(dataLoader(Array_3, str_12));
+      }
+
+      @Test(priority = 43,description = "TC43 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, 1 is valid and 1 is invalid)")
+      public void scenario_43() {
+            Assert.assertTrue(dataLoader(Array_3, str_13));
+      }
+
+      @Test(priority = 44,description = "TC44 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, 1 > len(1D Array) and 1 is invalid)")
+      public void scenario_44() {
+            Assert.assertTrue(dataLoader(Array_3, str_14));
+      }
+
+      @Test(priority = 45,description = "TC45 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, both are valid)")
+      public void scenario_45() {
+            Assert.assertTrue(dataLoader(Array_3, str_15));
+      }
+
+      @Test(priority = 46,description = "TC46 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 is valid and 1 have i > len(Array))")
+      public void scenario_46() {
+            Assert.assertTrue(dataLoader(Array_3, str_16));
+      }
+
+      @Test(priority = 47,description = "TC47 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 is valid and 1 have j > len(Array[i]))")
+      public void scenario_47() {
+            Assert.assertTrue(dataLoader(Array_3, str_17));
+      }
+
+      @Test(priority = 48,description = "TC48 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 is valid and is invalid)")
+      public void scenario_48() {
+            Assert.assertTrue(dataLoader(Array_3, str_18));
+      }
+
+      @Test(priority = 49,description = "TC49 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 have i and j >  len(Array) and is invalid)")
+      public void scenario_49() {
+            Assert.assertTrue(dataLoader(Array_3, str_19));
+      }
+
+      @Test(priority = 50,description = "TC50 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, both are valid)")
+      public void scenario_50() {
+            Assert.assertTrue(dataLoader(Array_3, str_20));
+      }
+
+      @Test(priority = 51,description = "TC51 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 have i > len(1D Array) and 1 is valid)")
+      public void scenario_51() {
+            Assert.assertTrue(dataLoader(Array_3, str_21));
+      }
+
+      @Test(priority = 52,description = "TC52 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 is valid and 1 have i > len(2D Array)")
+      public void scenario_52() {
+            Assert.assertTrue(dataLoader(Array_3, str_22));
+      }
+
+      @Test(priority = 53,description = "TC53 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 is valid and 1 have j > len(2D Array[i])")
+      public void scenario_53() {
+            Assert.assertTrue(dataLoader(Array_3, str_23));
+      }
+
+      @Test(priority = 54,description = "TC54 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 is invalid and 1 is valid)")
+      public void scenario_54() {
+            Assert.assertTrue(dataLoader(Array_3, str_24));
+      }
+
+      @Test(priority = 55,description = "TC55 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, both are invalid)")
+      public void scenario_55() {
+            Assert.assertTrue(dataLoader(Array_3, str_25));
+      }
+
+      @Test(priority = 56,description = "TC56 -- Test with 1-Dimensional Array and 2 Correct Format in String (Get 3 data of 1D Array and get 2 data of 2D Array, all are valid)")
+      public void scenario_56() {
+            Assert.assertTrue(dataLoader(Array_3, str_26));
+      }
+
+      @Test(priority = 57,description = "TC57 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, both are valid)")
+      public void scenario_57() {
+            Assert.assertTrue(dataLoader(Array_4, str_11));
+      }
+
+      @Test(priority = 58,description = "TC58 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, 1 is valid and 1 > len(1D Array))")
+      public void scenario_58() {
+            Assert.assertTrue(dataLoader(Array_4, str_12));
+      }
+
+      @Test(priority = 59,description = "TC59 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, 1 is valid and 1 is invalid)")
+      public void scenario_59() {
+            Assert.assertTrue(dataLoader(Array_4, str_13));
+      }
+
+      @Test(priority = 60,description = "TC60 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 1D Array, 1 > len(1D Array) and 1 is invalid)")
+      public void scenario_60() {
+            Assert.assertTrue(dataLoader(Array_4, str_14));
+      }
+
+      @Test(priority = 61,description = "TC61 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, both are valid)")
+      public void scenario_61() {
+            Assert.assertTrue(dataLoader(Array_4, str_15));
+      }
+
+      @Test(priority = 62,description = "TC62 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 is valid and 1 have i > len(Array))")
+      public void scenario_62() {
+            Assert.assertTrue(dataLoader(Array_4, str_16));
+      }
+
+      @Test(priority = 63,description = "TC63 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 is valid and 1 have j > len(Array[i]))")
+      public void scenario_63() {
+            Assert.assertTrue(dataLoader(Array_4, str_17));
+      }
+
+      @Test(priority = 64,description = "TC64 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 is valid and is invalid)")
+      public void scenario_64() {
+            Assert.assertTrue(dataLoader(Array_4, str_18));
+      }
+
+      @Test(priority = 65,description = "TC65 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 2 data of 2D Array, 1 have i and j >  len(Array) and is invalid)")
+      public void scenario_65() {
+            Assert.assertTrue(dataLoader(Array_4, str_19));
+      }
+
+      @Test(priority = 66,description = "TC66 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, both are valid)")
+      public void scenario_66() {
+            Assert.assertTrue(dataLoader(Array_4, str_20));
+      }
+
+      @Test(priority = 67,description = "TC67 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 have i > len(2D Array) and 1 is valid)")
+      public void scenario_67() {
+            Assert.assertTrue(dataLoader(Array_4, str_21));
+      }
+
+      @Test(priority = 68,description = "TC68 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 is valid and 1 have i > len(2D Array)")
+      public void scenario_68() {
+            Assert.assertTrue(dataLoader(Array_4, str_22));
+      }
+
+      @Test(priority = 69,description = "TC69 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 is valid and 1 have j > len(2D Array[i])")
+      public void scenario_69() {
+            Assert.assertTrue(dataLoader(Array_4, str_23));
+      }
+
+      @Test(priority = 70,description = "TC70 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, 1 is invalid and 1 is valid)")
+      public void scenario_70() {
+            Assert.assertTrue(dataLoader(Array_4, str_24));
+      }
+
+      @Test(priority = 71,description = "TC71 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 1 data of 1D Array and get 1 data of 2D Array, both are invalid)")
+      public void scenario_71() {
+            Assert.assertTrue(dataLoader(Array_4, str_25));
+      }
+
+      @Test(priority = 72,description = "TC72 -- Test with 2-Dimensional Array and 2 Correct Format in String (Get 3 data of 1D Array and get 2 data of 2D Array, all are valid)")
+      public void scenario_72() {
+            Assert.assertTrue(dataLoader(Array_4, str_26));
+      }
+
 
 
       /************************************* */
