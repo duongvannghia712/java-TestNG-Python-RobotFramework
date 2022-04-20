@@ -53,19 +53,22 @@ public class common implements commonMethodString, commonMethodObject {
             }
             
             if (typeArray == 0){
-                  System.out.println("- Return String: " + str);
+                  System.out.println("\t- Return String: " + str);
+                  System.out.println("\t_____--- FAILED ---_____");
                   return false;
             }
             
             if (checkString.size() == 0){
-                  System.out.println("- Return String: " + str);
+                  System.out.println("\t- Return String: " + str);
+                  System.out.println("\t_____--- FAILED ---_____");
                   return false;
             }
 
             else if (typeArray == 1){
                   String [] check_Array = (String []) Array;
                   if (index_Array_1D.size() == 0){
-                        System.out.println("- Return String: " + str);
+                        System.out.println("\t- Return String: " + str);
+                        System.out.println("\t_____--- FAILED ---_____");
                         return false;
                   }
                   else{
@@ -77,10 +80,12 @@ public class common implements commonMethodString, commonMethodObject {
                               }
                         }
                         if (count == 0){
-                              System.out.println("- Return String: " + str);
+                              System.out.println("\t- Return String: " + str);
+                              System.out.println("\t_____--- FAILED ---_____");
                               return false;
                         }
                         else{
+                              System.out.println("\t_____+++ PASSED +++_____");
                               return true;
                         } 
                   }
@@ -89,6 +94,7 @@ public class common implements commonMethodString, commonMethodObject {
             else{
                   String [][] check_Array = (String [][]) Array;
                   if (checkString.size() == 0){
+                        System.out.println("\t_____--- FAILED ---_____");
                         return false;
                   }
                   else{
@@ -110,10 +116,12 @@ public class common implements commonMethodString, commonMethodObject {
                               }
                         }
                         if (count == 0){
-                              System.out.println("- Return String: " + str);
+                              System.out.println("\t- Return String: " + str);
+                              System.out.println("\t_____--- FAILED ---_____");
                               return false;
                         }
                         else{
+                              System.out.println("\t_____+++ PASSED +++_____");
                               return true;
                         }
                   }
