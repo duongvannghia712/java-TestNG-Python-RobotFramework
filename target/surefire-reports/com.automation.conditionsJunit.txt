@@ -1,16 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: com.automation.conditionsJunit
 -------------------------------------------------------------------------------
-Tests run: 40, Failures: 37, Errors: 0, Skipped: 0, Time elapsed: 0.594 s <<< FAILURE! - in com.automation.conditionsJunit
-scenario_01 on scenario_01(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.009 s  <<< FAILURE!
+Tests run: 72, Failures: 49, Errors: 0, Skipped: 0, Time elapsed: 0.791 s <<< FAILURE! - in com.automation.conditionsJunit
+scenario_01 on scenario_01(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.012 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_01(conditionsJunit.java:27)
 
-scenario_02 on scenario_02(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_02 on scenario_02(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_02(conditionsJunit.java:32)
 
-scenario_03 on scenario_03(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_03 on scenario_03(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_03(conditionsJunit.java:37)
 
@@ -18,12 +18,12 @@ scenario_04 on scenario_04(com.automation.conditionsJunit)(com.automation.condit
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_04(conditionsJunit.java:42)
 
-scenario_05 on scenario_05(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_05 on scenario_05(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_05(conditionsJunit.java:47)
 
 scenario_07 on scenario_07(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 5
+java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_07(conditionsJunit.java:57)
 
 scenario_08 on scenario_08(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
@@ -39,22 +39,22 @@ java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_10(conditionsJunit.java:72)
 
 scenario_12 on scenario_12(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
-java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 3
+java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_12(conditionsJunit.java:82)
 
-scenario_13 on scenario_13(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
-java.lang.ArrayIndexOutOfBoundsException: Index 6 out of bounds for length 3
+scenario_13 on scenario_13(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.003 s  <<< FAILURE!
+java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_13(conditionsJunit.java:87)
 
 scenario_14 on scenario_14(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_14(conditionsJunit.java:92)
 
-scenario_16 on scenario_16(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_16 on scenario_16(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_16(conditionsJunit.java:102)
 
-scenario_17 on scenario_17(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.002 s  <<< FAILURE!
+scenario_17 on scenario_17(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_17(conditionsJunit.java:107)
 
@@ -62,27 +62,27 @@ scenario_18 on scenario_18(com.automation.conditionsJunit)(com.automation.condit
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_18(conditionsJunit.java:112)
 
-scenario_19 on scenario_19(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_19 on scenario_19(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_19(conditionsJunit.java:117)
 
-scenario_20 on scenario_20(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_20 on scenario_20(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_20(conditionsJunit.java:125)
 
-scenario_21 on scenario_21(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_21 on scenario_21(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_21(conditionsJunit.java:130)
 
-scenario_22 on scenario_22(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_22 on scenario_22(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_22(conditionsJunit.java:135)
 
-scenario_23 on scenario_23(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_23 on scenario_23(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_23(conditionsJunit.java:140)
 
-scenario_24 on scenario_24(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_24 on scenario_24(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_24(conditionsJunit.java:145)
 
@@ -90,7 +90,7 @@ scenario_25 on scenario_25(com.automation.conditionsJunit)(com.automation.condit
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_25(conditionsJunit.java:150)
 
-scenario_26 on scenario_26(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_26 on scenario_26(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_26(conditionsJunit.java:155)
 
@@ -98,23 +98,23 @@ scenario_27 on scenario_27(com.automation.conditionsJunit)(com.automation.condit
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_27(conditionsJunit.java:160)
 
-scenario_28 on scenario_28(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_28 on scenario_28(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_28(conditionsJunit.java:165)
 
-scenario_29 on scenario_29(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_29 on scenario_29(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_29(conditionsJunit.java:170)
 
-scenario_30 on scenario_30(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_30 on scenario_30(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_30(conditionsJunit.java:175)
 
-scenario_31 on scenario_31(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_31 on scenario_31(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_31(conditionsJunit.java:180)
 
-scenario_32 on scenario_32(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_32 on scenario_32(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.002 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_32(conditionsJunit.java:185)
 
@@ -126,15 +126,15 @@ scenario_34 on scenario_34(com.automation.conditionsJunit)(com.automation.condit
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_34(conditionsJunit.java:195)
 
-scenario_35 on scenario_35(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_35 on scenario_35(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_35(conditionsJunit.java:200)
 
-scenario_36 on scenario_36(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+scenario_36 on scenario_36(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_36(conditionsJunit.java:205)
 
-scenario_37 on scenario_37(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+scenario_37 on scenario_37(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_37(conditionsJunit.java:210)
 
@@ -149,4 +149,52 @@ java.lang.AssertionError
 scenario_40 on scenario_40(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
 java.lang.AssertionError
 	at com.automation.conditionsJunit.scenario_40(conditionsJunit.java:225)
+
+scenario_44 on scenario_44(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_44(conditionsJunit.java:248)
+
+scenario_45 on scenario_45(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_45(conditionsJunit.java:253)
+
+scenario_46 on scenario_46(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.002 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_46(conditionsJunit.java:258)
+
+scenario_47 on scenario_47(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_47(conditionsJunit.java:263)
+
+scenario_48 on scenario_48(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_48(conditionsJunit.java:268)
+
+scenario_49 on scenario_49(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_49(conditionsJunit.java:273)
+
+scenario_51 on scenario_51(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_51(conditionsJunit.java:283)
+
+scenario_54 on scenario_54(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_54(conditionsJunit.java:298)
+
+scenario_55 on scenario_55(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_55(conditionsJunit.java:303)
+
+scenario_60 on scenario_60(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_60(conditionsJunit.java:328)
+
+scenario_65 on scenario_65(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_65(conditionsJunit.java:353)
+
+scenario_71 on scenario_71(com.automation.conditionsJunit)(com.automation.conditionsJunit)  Time elapsed: 0.001 s  <<< FAILURE!
+java.lang.AssertionError
+	at com.automation.conditionsJunit.scenario_71(conditionsJunit.java:383)
 

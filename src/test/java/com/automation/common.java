@@ -40,7 +40,8 @@ public class common implements commonMethodString, commonMethodObject {
       public static String [][] Array_4 = {{"2D_1_Value1", "2D_1_Value2"}, {"2D_2_Value1", "2D_2_Value2", "2D_2_Value3"}, {"2D_3_Value1", "2D_3_Value2", "2D_3_Value3", "2D_3_Value4", "2D_3_Value5"}};
       
 
-      public boolean dataLoader(Object Array, String str){
+      public boolean dataLoader(Object Array, String str, String TC){
+            System.out.println("\nStart run Test Case " + TC);
             int typeArray = checkTypeOfArray(Array);
             List<List> checkString = checkString(str);
             List<List> index_Array_1D = new ArrayList<>();
@@ -52,6 +53,11 @@ public class common implements commonMethodString, commonMethodObject {
             }
             
             if (typeArray == 0){
+                  System.out.println("- Return String: " + str);
+                  return false;
+            }
+            
+            if (checkString.size() == 0){
                   System.out.println("- Return String: " + str);
                   return false;
             }
@@ -115,7 +121,8 @@ public class common implements commonMethodString, commonMethodObject {
       }
 
 
-      
+
+
       @Override
       public int checkTypeOfArray(Object array) {
             int result = 0;
